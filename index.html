@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bagpacker — Search Flights, Stays, Cars</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">BP</div>
+      <div class="name">Bagpacker</div>
+    </div>
+    <nav class="nav">
+      <a href="#deals">Deals</a>
+      <a href="#explore">Explore</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cta">Sign In</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Flexible travel, packed smarter.</p>
+        <h1>Search every major airline, stay, and car in one bold move.</h1>
+        <p class="sub">Bagpacker compares prices across the web and bundles the cleanest options so you can book fast, save more, and move light.</p>
+        <div class="hero-actions">
+          <button class="primary">Start a trip</button>
+          <button class="ghost">Watch 60s demo</button>
+        </div>
+        <div class="trust">
+          <div>4.8 ? average traveler rating</div>
+          <div>9.2M itineraries compared weekly</div>
+        </div>
+      </div>
+
+      <div class="search-card" id="search">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="flights" role="tab" aria-selected="true">Flights</button>
+          <button class="tab" data-tab="stays" role="tab">Stays</button>
+          <button class="tab" data-tab="cars" role="tab">Cars</button>
+          <button class="tab" data-tab="packages" role="tab">Packages</button>
+        </div>
+
+        <form class="search-form" aria-label="Search travel">
+          <div class="field">
+            <label>From</label>
+            <input type="text" placeholder="City or airport" value="New York (JFK)" />
+          </div>
+          <div class="field">
+            <label>To</label>
+            <input type="text" placeholder="Where to?" value="Lisbon (LIS)" />
+          </div>
+          <div class="field">
+            <label>Dates</label>
+            <input type="text" placeholder="Add dates" value="Mar 12 – Mar 19" />
+          </div>
+          <div class="field">
+            <label>Travelers</label>
+            <input type="text" placeholder="1 adult" value="2 adults" />
+          </div>
+          <button class="primary block">Search deals</button>
+          <div class="fine">No booking fees. Prices update every 4 minutes.</div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="deals">
+      <div class="section-head">
+        <h2>Today’s most-watched deals</h2>
+        <p>Freshly pulled from 220+ partners. Prices move fast.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-tag">40% off</div>
+          <h3>Boston ? Reykjavík</h3>
+          <p>Round trip, 6 nights, February value drop.</p>
+          <div class="card-price">$412</div>
+        </article>
+        <article class="card">
+          <div class="card-tag">Bundle</div>
+          <h3>LA ? Tokyo + Hotel</h3>
+          <p>7-night boutique stay with flexible change.</p>
+          <div class="card-price">$1,238</div>
+        </article>
+        <article class="card">
+          <div class="card-tag">Weekend</div>
+          <h3>Chicago ? Austin</h3>
+          <p>Music, food, and poolside stays.</p>
+          <div class="card-price">$189</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="explore">
+      <div class="section-head">
+        <h2>Explore by vibe</h2>
+        <p>Pick a feeling, we’ll build a set of routes and bundles.</p>
+      </div>
+      <div class="grid">
+        <div class="tile">
+          <h3>Sun-chaser</h3>
+          <p>Warm coasts + beach stays under $650.</p>
+        </div>
+        <div class="tile">
+          <h3>Culture hop</h3>
+          <p>Old city walks + local stays with breakfast.</p>
+        </div>
+        <div class="tile">
+          <h3>Nature reset</h3>
+          <p>Cabins, trails, and lakefront airbnbs.</p>
+        </div>
+        <div class="tile">
+          <h3>Work + wander</h3>
+          <p>30-day rentals with strong Wi-Fi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-head">
+        <h2>How Bagpacker works</h2>
+        <p>We compare for you, then curate for clarity.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Search once</h3>
+          <p>Pull inventory from airlines, hotels, and top OTAs.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>See transparent filters</h3>
+          <p>Fees, bags, and flexibility shown upfront.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Book anywhere</h3>
+          <p>Choose the partner you trust. We stay out of the way.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="section-head">
+        <h2>Questions, answered</h2>
+        <p>Quick answers before you pack.</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Is Bagpacker a travel agency?</summary>
+          <p>No. We compare and curate routes, then you complete booking with the provider.</p>
+        </details>
+        <details>
+          <summary>Do you charge booking fees?</summary>
+          <p>No booking fees. We earn affiliate revenue from partners when you book.</p>
+        </details>
+        <details>
+          <summary>Can I bundle flight + hotel?</summary>
+          <p>Yes. Bagpacker builds package options with clear savings.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="brand">
+        <div class="logo">BP</div>
+        <div class="name">Bagpacker</div>
+      </div>
+      <p>Plan more. Carry less. Book smarter travel with Bagpacker.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Partners</a>
+      <a href="#">Careers</a>
+      <a href="#">Press</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="footer-cta">
+      <h4>Get fare drops</h4>
+      <p>Weekly price alerts in your inbox.</p>
+      <div class="subscribe">
+        <input type="email" placeholder="you@email.com" />
+        <button class="primary">Notify me</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
